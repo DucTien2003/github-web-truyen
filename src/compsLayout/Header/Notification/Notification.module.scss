@@ -1,0 +1,70 @@
+.wrapper {
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 330px;
+  min-height: 120px;
+  height: 440px;
+  background-color: var(--white);
+  border-radius: 6px;
+  overflow-y: auto;
+  overflow: overlay;
+}
+
+.header {
+  height: 35px;
+  margin: 6px 0 0 15px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 2.1rem;
+  }
+}
+
+.notifiList {
+  width: 100%;
+
+  .notifiItem {
+    width: 100%;
+    height: 75px;
+    background-color: var(--white);
+    color: rgb(94, 94, 94);
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.notifiItem {
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.07);
+  }
+}
+
+.notifiItem__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px 0 15px;
+}
+
+.notifiItem__avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.notifiItem__body {
+  flex: 1;
+  height: 100%;
+  padding: 14px 10px 0 10px;
+  text-align: start;
+}
+
+.notifiItem__content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.notifiItem__time {
+  color: rgba($color: rgb(223, 140, 92), $alpha: 1);
+}

@@ -1,0 +1,65 @@
+.wrapper {
+  user-select: none;
+}
+
+// Types btn
+
+.normal {
+  border-radius: 4px;
+}
+
+.rounded {
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  &:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color-hover-1);
+  }
+}
+
+.outline {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+
+  &:hover {
+    background-color: var(--primary-color-hover-2);
+    border-color: currentColor;
+  }
+}
+
+// Size btn
+.sizeS {
+  min-width: 90px;
+  padding: 4px 14px;
+  font-size: 1.4rem;
+}
+
+.sizeM {
+  min-width: 110px;
+  padding: 8px 22px;
+  font-size: 1.5rem;
+}
+
+.sizeL {
+  min-width: 130px;
+  padding: 10px 34px;
+  font-size: 1.6rem;
+}
+
+// Unique
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.left-icon {
+  margin-right: 10px;
+}
+
+.right-icon {
+  margin-left: 10px;
+}

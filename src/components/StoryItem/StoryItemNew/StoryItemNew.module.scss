@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  padding: 12px;
+  background-color: rgb(182, 173, 173);
+}
+
+.cover-story {
+  // scale: 0.685
+  width: 112px;
+  height: calc(112px / 0.685);
+  margin-right: 12px;
+}
+
+// .body {
+// }
+
+.name {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.chap {
+  color: #009fdf;
+}
+
+.views {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  padding: 6px 0;
+}
+
+.views__amount {
+  margin-right: 6px;
+  margin-left: 4px;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  line-height: 1.8rem;
+  font-size: 1.4rem;
+}

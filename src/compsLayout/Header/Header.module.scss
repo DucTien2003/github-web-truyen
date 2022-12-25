@@ -1,0 +1,100 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  width: var(--header-width);
+  justify-content: space-between;
+}
+
+// Brand
+.brand {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.brand__logo {
+  width: 45px;
+}
+
+.brand__name {
+  color: #6f7a7d;
+  font-weight: 700;
+  font-size: 2.4rem;
+  padding-left: 2px;
+}
+
+.brand__name span {
+  color: #112129;
+}
+
+// Action button
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+}
+
+.action-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 2.2rem;
+  margin-right: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color-hover-2);
+  }
+}
+
+.amount-notification {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 15px;
+  color: var(--white);
+  border-radius: 999px;
+  background-color: rgba(250, 63, 63, 0.9);
+  font-size: 1.1rem;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.action__login {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.action__register {
+  cursor: pointer;
+}

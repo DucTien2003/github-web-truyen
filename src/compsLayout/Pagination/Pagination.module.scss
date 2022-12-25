@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgb(228, 230, 139);
+}
+
+.total {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.6rem;
+  margin-left: 12px;
+  font-weight: 600;
+  background-color: rgb(194, 152, 75);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  margin-left: 12px;
+  font-weight: 500;
+  background-color: rgb(243, 243, 243);
+  box-shadow: var(--box-shadow-2);
+  user-select: none;
+  cursor: pointer;
+
+  &.leap {
+    height: 32px;
+    width: 50px;
+  }
+
+  &:hover {
+    border: 2px solid rgba($color: red, $alpha: 0.3);
+  }
+
+  &.selected {
+    box-shadow: var(--box-shadow-1);
+    border: 2px solid rgba($color: red, $alpha: 0.8);
+  }
+}

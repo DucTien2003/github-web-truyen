@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  padding: 12px;
+  background-color: rgb(182, 173, 173);
+}
+
+.cover-story {
+  // scale: 0.685
+  width: 112px;
+  height: calc(112px / 0.685);
+  margin-right: 12px;
+}
+
+.body {
+  flex: 1;
+}
+
+.name {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.list-chap {
+}
+
+.item-chap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chap {
+  color: #009fdf;
+}
+
+.time {
+  color: gray;
+  font-size: 1.4rem;
+}
